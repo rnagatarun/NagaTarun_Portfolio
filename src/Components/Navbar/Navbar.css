@@ -25,7 +25,48 @@
     transform: scale(1.05);
 }
 
-.navbar img {
-    width: 250px;
+.logo{
+    width: 150px;
     height: auto; 
+}
+
+.nav-menu li img{
+    display: flex;
+    margin: auto;
+    width: 50px;
+    height: auto;
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+
+@media(max-width: 768px){
+    .navbar{
+        display: none;
+    }
+    .nav-connect{
+        display: none;
+    }
+}
+
+.nav-mob-open{
+    display: block;
+    position: fixed;
+    right: 30px;
+}
+
+.nav-mob-open,
+.nav-mob-close{
+    width: 20px; 
+    height: auto;
+    cursor: pointer;
 }
